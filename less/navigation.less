@@ -1,7 +1,67 @@
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  height: 60px;
+  width: 100%;
   background-color: black;
-  a {
-    color: white;
-    text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  img {
+    height: 60px;
+  }
+
+  .spacer {
+    width: 40%;
+  }
+
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 30%;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.8rem;
+
+      &:hover {
+        letter-spacing: 2px;
+        transition: all 180ms ease-in-out;
+      }
+
+      &:before,
+      &:after {
+        backface-visibility: hidden;
+        border: 1px solid rgba(#fff, 0);
+        bottom: 0px;
+        content: " ";
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        transition: all 280ms ease-in-out;
+        width: 0;
+      }
+
+      &:hover:after,
+      &:hover:before {
+        backface-visibility: hidden;
+        border-color: #fff;
+        transition: width 350ms ease-in-out;
+        width: 100%;
+      }
+
+      &:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 100%;
+      }
+    }
   }
 }
