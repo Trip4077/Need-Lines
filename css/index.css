@@ -153,7 +153,7 @@ nav {
   left: 0;
   height: 60px;
   width: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -235,6 +235,56 @@ nav .nav__container a:hover:before {
   outline: none;
 }
 .jumbotron button:hover {
+  background-color: black;
+}
+.jumbotron button:hover a {
+  color: white;
+}
+.jumbotron button a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  heighT: 100%;
+}
+.welcome {
+  background-color: #e2e2e2;
+}
+.welcome .welcome__container {
+  width: 70%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcome .welcome__container h2 {
+  font-size: 4.5rem;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+.welcome .welcome__container p {
+  font-size: 2rem;
+  line-height: 35px;
+  margin-bottom: 50px;
+}
+.welcome .welcome__container a {
+  color: black;
+  text-decoration: none;
+  width: 25%;
+  align-self: center;
+}
+.welcome .welcome__container a button {
+  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 55px;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.welcome .welcome__container a button:hover {
   background-color: black;
   color: white;
 }
