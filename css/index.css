@@ -204,6 +204,55 @@ nav .nav__container a:hover:before {
   top: 0;
   width: 100%;
 }
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 50px 20px 20px 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .footer img {
+  height: 150px;
+  border-radius: 10px;
+}
+footer .footer .footer__form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 20%;
+}
+footer .footer .footer__form h2 {
+  font-size: 2.4rem;
+}
+footer .footer .footer__form input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin: 5% 0;
+}
+footer .footer .footer__form input:focus {
+  outline: none;
+}
+footer .footer .footer__form button {
+  width: 25%;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+footer .footer .footer__form button:focus {
+  outline: none;
+}
+footer .footer address p {
+  margin: 10px 0;
+}
 .jumbotron {
   background-image: url("../img/home/home-jumbotron.jpeg");
   height: 100%;
