@@ -1,5 +1,6 @@
 //contact
-document.querySelector('#contact__form').submit((event) => {
+
+$('#contact__form').submit((event) => {
   let name = document.querySelector('#inputName'),
       email = document.querySelector('#inputEmail'),
       message = document.querySelector('#inputMessage');
@@ -8,13 +9,13 @@ document.querySelector('#contact__form').submit((event) => {
         alert('All Fields Required');
       } else {
         $.ajax({
-          url: "https://formspree.io/bj2336@email.vccs.edu",
+          url: "https://formspree.io/letslearntechyt@gmail.com",
           method: "POST",
-          data: $(this).serialize(),
+          data: $('#contact__form').serialize(),
           dataType: "json"
         });
         event.preventDefault();
-        $(this).get(0).reset();
+        $('#contact__form').get(0).reset();
         alert('Message Sent');
       }
 });
