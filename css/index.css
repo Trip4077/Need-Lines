@@ -171,6 +171,11 @@ nav .nav__container {
   align-items: center;
   width: 30%;
 }
+@media (max-width: 796px) {
+  nav .nav__container {
+    margin-right: 12%;
+  }
+}
 nav .nav__container a {
   color: white;
   text-decoration: none;
@@ -179,6 +184,7 @@ nav .nav__container a {
 @media (max-width: 796px) {
   nav .nav__container a {
     font-size: 1.4rem;
+    margin-right: 12px;
   }
 }
 nav .nav__container a:hover {
@@ -316,6 +322,7 @@ footer .footer address p {
 .jumbotron button {
   margin: 4.5% 20% 0 0;
   border: 2px solid black;
+  border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.4);
   height: 55px;
   width: 12%;
@@ -327,7 +334,7 @@ footer .footer address p {
   outline: none;
 }
 .jumbotron button:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .jumbotron button:hover a {
   color: white;
@@ -394,7 +401,8 @@ footer .footer address p {
 }
 .welcome .welcome__container a button {
   border: 2px solid black;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: orange;
+  border-radius: 8px;
   height: 55px;
   width: 100%;
   font-size: 2rem;
@@ -403,8 +411,8 @@ footer .footer address p {
   cursor: pointer;
 }
 .welcome .welcome__container a button:hover {
-  background-color: black;
   color: white;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .work .work__container {
   display: flex;
@@ -591,14 +599,17 @@ footer .footer address p {
   margin: 30px 0;
 }
 .tag-line h2 a {
-  color: white;
-  text-shadow: 0px 0px 10px #000000, 0px 0px 8px #000000, 0px 0px 5px #000000;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 2px 40px;
+  background-color: orange;
+  letter-spacing: 2px;
   text-decoration: none;
 }
 .tag-line h2 a:hover {
-  border: 2px solid black;
-  transition: padding 1s ease;
-  padding: 2px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 796px) {
   .tag-line h2 {
@@ -629,5 +640,93 @@ footer .footer address p {
   }
 }
 .contact {
-  margin-top: 300px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  padding: 50px 75px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 526px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+.contact .grid__col--12 {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.contact .grid__col--12 h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.contact .grid__col--12 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contact .grid__col--12 form label {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.contact .grid__col--12 form input {
+  width: 100%;
+  max-width: 400px;
+  height: 30px;
+  margin: 15px 0;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.contact .grid__col--12 form input:focus {
+  outline: none;
+  border: 1.5px solid rgba(0, 0, 0, 0.8);
+}
+.contact .grid__col--12 form textarea {
+  margin: 15px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  min-width: 150px;
+  max-height: 200px;
+  min-height: 100px;
+}
+.contact .grid__col--12 form textarea:focus {
+  outline: none;
+  border: 1.5px solid rgba(0, 0, 0, 0.8);
+}
+.contact .grid__col--12 form .btn--default {
+  cursor: pointer;
+  max-width: 200px;
+  height: 45px;
+  background-color: orange;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.contact .grid__col--12 form .btn--default:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.contact .services {
+  margin-left: 15%;
+  width: 100%;
+  max-width: 350px;
+}
+.contact .services h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.contact .services ul {
+  margin-top: 40px;
+  list-style-type: square;
+}
+.contact .services ul li {
+  margin: 20px 0 20px 22.5%;
+  font-size: 2rem;
 }
