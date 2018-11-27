@@ -1,5 +1,5 @@
 //contact
-// 
+//
 // $('#contact__form').submit(function(event) {
 //   let name = document.querySelector('#inputName'),
 //       email = document.querySelector('#inputEmail'),
