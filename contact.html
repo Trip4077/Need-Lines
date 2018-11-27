@@ -20,9 +20,23 @@
       </div>
     </nav>
 
+    <section class="contact">
+      <div class="grid__col--12">
+        <form id="contact__form">
+          <label for="inputName">Name</label>
+          <input class="contact__form__input" id="inputName" type="text" placeholder="Name" name="name"/>
+          <label for="inputEmail">Email</label>
+          <input class="contact__form__input" id="inputEmail" type="email" placeholder="Email" name="email"/>
+          <label for="inputMessage">Message</label>
+          <textarea class="contact__form__input" id="inputMessage" rows="3" placeholder="Your Message" name="message"></textarea>
+          <input class="display-none" type="text" name="_gotcha"/>
+          <input class="btn--default fill" id="email-submit-btn" type="submit" value="Send"/>
+        </form>
+      </div>
+    </section>
+
     <footer>
       <div class="footer">
-        <img src="./img/footer/footer-img.jpeg" alt="Parking Lines">
 
         <form class="footer__form">
           <h2>Contact Us</h2>
@@ -37,13 +51,15 @@
           <p>Jb20hdco123@aol.com</p>
         </address>
 
-        <img src="./img/footer/footer-img.jpeg" alt="Parking Lines">
       </div>
       <div class="copyright">
         <p>Copyright&copy;2018</p>
       </div>
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
