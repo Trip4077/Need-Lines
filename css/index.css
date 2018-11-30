@@ -169,7 +169,7 @@ nav .nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 30%;
+  width: 15%;
 }
 @media (max-width: 796px) {
   nav .nav__container {
@@ -272,6 +272,17 @@ footer .footer .footer__form button {
 }
 footer .footer .footer__form button:focus {
   outline: none;
+}
+footer .footer .footer__fb h2 {
+  font-size: 2.2rem;
+  margin: 20px 0;
+}
+footer .footer .footer__fb img {
+  height: 75px;
+}
+footer .footer .footer__fb p {
+  display: inline-block;
+  margin-left: 15px;
 }
 footer .footer address p {
   margin: 10px 0;
